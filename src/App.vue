@@ -26,5 +26,6 @@ const reset = () => {
 }
 .value {
   font-weight: bold;
+  font-variant-numeric: tabular-nums;
 }
 </style>
