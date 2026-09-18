@@ -12,7 +12,7 @@ const reset = () => {
 <template>
   <div class="counter">
     <h2>Simple Counter</h2>
-    <p class="count">Count: <span>{{ count }}</span></p>
+    <p class="count">Count: <span class="value">{{ count }}</span></p>
     <div class="button">
       <button @click="increment">Increase Count</button>
       <button @click="reset">Reset Count</button>
@@ -23,5 +23,8 @@ const reset = () => {
 <style scoped>
 .counter {
   font-family: system-ui, sans-serif;
+}
+.value {
+  font-weight: bold;
 }
 </style>
