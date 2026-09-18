@@ -20,4 +20,8 @@ const reset = () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.counter {
+  font-family: system-ui, sans-serif;
+}
+</style>
