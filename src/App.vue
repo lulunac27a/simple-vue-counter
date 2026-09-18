@@ -1,32 +1,33 @@
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 const count = ref(0);
 const increment = () => {
-  count.value++;
+    count.value++;
 };
 const reset = () => {
-  count.value = 0;
+    count.value = 0;
 };
 </script>
 
 <template>
-  <div class="counter">
-    <h2>Simple Counter</h2>
-    <p class="count">Count: <span class="value">{{ count }}</span></p>
-    <div class="button">
-      <button @click="increment">Increase Count</button>
-      <button @click="reset">Reset Count</button>
+    <div class="counter">
+        <h2>Simple Vue Counter App</h2>
+        <p class="count">
+            Count: <span class="value">{{ count }}</span>
+        </p>
+        <div class="button">
+            <button @click="increment">Increase Count</button>
+            <button @click="reset">Reset Count</button>
+        </div>
     </div>
-  </div>
 </template>
 
 <style scoped>
 .counter {
-  font-family: system-ui, sans-serif;
+    font-family: system-ui, sans-serif;
 }
-
 .value {
-  font-weight: bold;
-  font-variant-numeric: tabular-nums;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
 }
 </style>
